@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f3f0d7;
+  color: #3d4820;
+}
+
+/* Navigation */
+nav {
+  background-color: #5b6735;
+  display: flex;
+  justify-content: center;
+  padding: 15px 40px;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;      /* keeps shape + text aligned vertically */
+  justify-content: center;  /* centers them horizontally */
+  
+}
+
+
+.myname {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 300px;
+    
+}
+
+.hero .firstT {
+    font-size: 40px;
+    color: #BC6C25;
+    text-shadow: 0px -4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero .secondT {
+    font-size: 35px;
+    margin-left: 30px;
+    color: #BC6C25;
+    opacity: 0.6;
+    text-shadow: 0px -4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero .thirdT {
+    font-size: 30px;
+    margin-left: 50px;
+    color: #BC6C25;
+    opacity: 0.3;
+    text-shadow: 0px -4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shape {
+  width: 180px;
+  height: 180px;
+  background-color: #ccc;
+  border-radius: 40% 0 0 40%;
+  margin-right: 50px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+}
+
+.hero-text p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.highlight {
+  color: #b05a00;
+  font-weight: 550;
+  font-size: 20px;
+}
+
+.stack {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+
+/* Scroll Down */
+.scroll-down {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.scroll-down .arrow {
+  display: inline-block;
+  transform: rotate(45deg);
+  border-left: 20px solid black;
+  border-bottom: 20px solid black;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.scroll-down .arrow span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+  color: white;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  white-space: nowrap;
+}
