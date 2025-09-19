@@ -1,34 +1,80 @@
+@font-face {
+  font-family: 'Chillax1';
+  src: url('../fonts/chillax/Chillax-Extralight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Chillax2';
+  src: url('../fonts/chillax/Chillax-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Chillax3';
+  src: url('../fonts/chillax/Chillax-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Chillax4';
+  src: url('../fonts/chillax/Chillax-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Chillax5';
+  src: url('../fonts/chillax/Chillax-Semibold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Chillax6';
+  src: url('../fonts/chillax/Chillax-Bold.otf') format('opentype');
+}
+
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
   background-color: #f3f0d7;
   color: #3d4820;
 }
 
 /* Navigation */
-nav {
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background-color: #5b6735;
+  width: 100vw;          /* full viewport width */
+  left: 0; right: 0;    /* make sure it touches both sides */
+}
+
+.nav-inner{
+  max-width: 1200px;    /* keeps links in a nice container */
+  margin: 0 auto;       /* centers the inner container */
+  padding: 15px 40px;
   display: flex;
   justify-content: center;
-  padding: 15px 40px;
+  gap: 30px;
+  box-sizing: border-box;
+  font-family: 'Chillax2', sans-serif;
 }
 
-nav a {
-  color: #ddd;
+nav a{
+  color: #FEFAE0;
   text-decoration: none;
-  margin-left: 30px;
-  font-size: 16px;
-  transition: color 0.3s ease;
+  font-size: 18px;
+  transition: color .3s ease;
 }
-
-nav a:hover {
-  color: #fff;
-}
+nav a:hover{ color:#fff; }
 
 /* Hero Section */
 .hero {
-  text-align: center; /* centers the name at the top */
-  padding: 40px;
+  padding: 70px;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;   /* stack name on top, content below */
+  align-items: flex-start;   /* everything aligns to the left */
+  max-width: 1200px;         /* optional: keeps it from stretching too wide */
+  margin: 0 auto;            /* centers the whole block on large screens */
+  padding: 0 40px; 
 }
 
 .hero-img img {
@@ -42,37 +88,42 @@ nav a:hover {
 
 
 .myname {
+  font-family: 'Chillax5', sans-serif;
   font-size: 60px;
   font-weight: bold;
   margin-bottom: 40px;
+  align-self: flex-start;   /* aligns the name to the left edge of hero-inner */
 }
 
+
 .hero .firstT {
-    font-size: 40px;
+    font-size: 60px;
     color: #BC6C25;
     text-shadow: 0px -4px 4px rgba(0, 0, 0, 0.2);
+    
 }
 
 .hero .secondT {
-    font-size: 35px;
-    margin-left: 30px;
+    font-family: 'Chillax2', sans-serif;
+    font-size: 50px;
     color: #BC6C25;
     opacity: 0.6;
     text-shadow: 0px -4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero .thirdT {
-    font-size: 30px;
-    margin-left: 50px;
+    font-family: 'Chillax1', sans-serif;
+    font-size: 40px;
     color: #BC6C25;
     opacity: 0.3;
     text-shadow: 0px -4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero-content {
+  font-family: 'Chillax3', sans-serif;
   display: flex;
   align-items: flex-start;      /* vertically aligns image + text */
-  justify-content: center;  /* keeps them centered */
+  justify-content: flex-start;  
 }
 
 .hero-img img {
@@ -84,28 +135,21 @@ nav a:hover {
   background-color: #ccc;
 }
 
-.hero-text h1 {
-  font-size: 42px;
-  font-weight: 700;
-  margin: 0 0 15px 0;
-}
-
 .hero-text p {
   margin: 5px 0;
-  font-size: 18px;
+  font-size: 20px;
   text-align: left;
 }
 
 .highlight {
   color: #b05a00;
   font-weight: 550;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .stack {
-  font-size: 26px;
+  text-align: center;
   font-weight: 700;
-  line-height: 1.4;
 }
 
 
