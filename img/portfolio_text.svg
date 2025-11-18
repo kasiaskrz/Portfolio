@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 404.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #9b5de5;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: Poppins-Light, Poppins;
+        font-size: 230px;
+        font-weight: 300;
+      }
+
+      .cls-3 {
+        opacity: .32;
+      }
+    </style>
+  </defs>
+  <g class="cls-3">
+    <text class="cls-1" transform="translate(4.22 209.25) scale(1 -1)"><tspan x="0" y="0">PORTFOLIO</tspan></text>
+  </g>
+  <text class="cls-2" transform="translate(4.85 195.5)"><tspan x="0" y="0">PORTFOLIO</tspan></text>
+</svg>
